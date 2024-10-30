@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2">
+
+    <include
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_layout"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cna"
+        android:textSize="70dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="240dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Engineering\nTechnology Center"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="145dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/header_layout"
+        android:paddingTop="60dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!-- Programs Button -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="72dp"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/programsButton"
+                android:gravity="bottom"
+                android:background="@drawable/programs"
+                android:clickable="true"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:text="Programs"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+
+        <!-- Calendar Button -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="72dp"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/calendarButton"
+                android:gravity="bottom"
+                android:background="@drawable/calendar"
+                android:clickable="true"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:text="Calendar"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Contact Button -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="72dp"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:id="@+id/contactButton"
+                android:gravity="left"
+                android:background="@drawable/contact"
+                android:clickable="true"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:text="Contacts"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="330dp"
+     android:layout_marginLeft="70dp">
+
+     <!-- Schedule Button -->
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="72dp"
+         android:layout_height="96dp"
+         android:layout_weight="1"
+         android:layout_marginStart="8dp"
+         android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+         <ImageButton
+             android:layout_width="match_parent"
+             android:layout_height="72dp"
+             android:id="@+id/scheduleButton"
+             android:gravity="bottom"
+             android:background="@drawable/schedule"
+             android:clickable="true"
+             android:layout_marginTop="0dp"
+
+             tools:ignore="RtlHardcoded" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="24dp"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="6dp"
+             android:text="Schedule"
+             android:textColor="@color/black"/>
+
+     </LinearLayout>
+
+     <!-- News Button -->
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="72dp"
+         android:layout_height="96dp"
+         android:layout_weight="1"
+         android:layout_marginStart="8dp"
+         android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+         <ImageButton
+             android:layout_width="match_parent"
+             android:layout_height="72dp"
+             android:id="@+id/NewsButton"
+             android:gravity="bottom"
+             android:background="@drawable/news"
+             android:clickable="true"
+             android:layout_marginTop="0dp"
+
+             tools:ignore="RtlHardcoded" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="24dp"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="6dp"
+             android:text="News"
+             android:textColor="@color/black"/>
+
+
+     </LinearLayout>
+
+     <!-- Bus Button -->
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="72dp"
+         android:layout_height="96dp"
+         android:layout_weight="1"
+         android:layout_marginStart="8dp"
+         android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+         <ImageButton
+             android:layout_width="match_parent"
+             android:layout_height="72dp"
+             android:id="@+id/busButton"
+             android:gravity="bottom"
+             android:background="@drawable/bus"
+             android:clickable="true"
+             android:layout_marginTop="0dp"
+
+             tools:ignore="RtlHardcoded" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="24dp"
+             android:gravity="center_horizontal"
+             android:layout_marginTop="6dp"
+             android:text="Metrobus"
+             android:textColor="@color/black"/>
+
+
+     </LinearLayout>
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="160dp">
+
+
+        <!-- email Button -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"> <!-- Adjust margin as needed -->
+   // <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/emailButton"
+        android:gravity="bottom"
+        android:background="@drawable/mail"
+        android:clickable="true"
+        android:layout_marginTop="0dp"
+
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="E-mail"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="680dp"
+        android:gravity="end"
+
+
+        >
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info"
+        android:layout_gravity="end"
+
+        />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:textSize="20sp"></TextView>
+
+
+    <!-- activity_main.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Include the header layout -->
+        <include layout="@layout/subactivityheader" />
+
+        <!-- Add your UI elements here -->
+    </LinearLayout>
+
+<!--
+
+-->
+</RelativeLayout>
